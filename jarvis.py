@@ -19,13 +19,15 @@ def speak(audio):
 
 def wishme():
 	hour = 	int(datetime.datetime.now().hour)
+	wishmsg =""
 	if hour>=0 and hour<12:
-		speak("Good Morning Sir")
+		wishmsg = "Good Morning Sir, "
 	elif hour>=12 and hour<18:
-		speak("Good Afternoon Sir")
+		wishmsg = "Good Afternoon Sir, "
 	else:
-		speak("Good Evening Sir") 
-	# speak("I am Jarvis, How may I help you!")
+		wishmsg = "Good Evening Sir "
+	wishmsg = wishmsg +"I am Jarvis How may I help you!"
+	speak(wishmsg)
 
 def takeCommand():
 	'''
@@ -60,7 +62,6 @@ class testVLC:
             self.mediaList.add_media(self.Player.media_new(music_dir+'/'+music))
         self.listPlayer = self.Player.media_list_player_new()
         self.listPlayer.set_media_list(self.mediaList)
-        # self.Player.set_playback_mode(vlc.PlaybackMode.loop)
     def playPlaylist(self):
         self.listPlayer.play()
     def nextPlay(self):
@@ -109,12 +110,7 @@ if __name__ == "__main__":
             break
         elif ('music' in query) or ('song' in query):
             if 'play' in query:
-                # songs = os.listdir(music_dir)
-                # print(songs)
-                # os.system(os.path.join(music_dir, songs[0]))
-                # os.system("mpg123 /home/adarsh/Adi/music/"+ songs[0])
                 test.playPlaylist()      
-                
             elif 'pause' in query:
                 test.pausePlaylist()
             elif 'stop' in query: 
