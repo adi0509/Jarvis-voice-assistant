@@ -9,7 +9,7 @@
 7. Jarvis quit whenever you want
 
 
-To run this file you have to install some python library.
+To run this file you have to install some python module.
 
 1. `pip install datetime`
 2. `pip install SpeechRecognition`
