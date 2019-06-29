@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Jarvis
+Icon=Path/to/icon/JARVIS_Logo.png
+Exec=python Path/to/code/Jarvis-voice-assignment/jarvis.py
+Terminal=false
+Type=Application
+

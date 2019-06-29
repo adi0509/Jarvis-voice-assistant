@@ -126,3 +126,5 @@ if __name__ == "__main__":
 
         elif 'open code' in query:
 			os.system("code")
+        elif 'hello' in query:
+                speak("Hello, Sir!")
