@@ -1,4 +1,4 @@
-# Jarvis voice assignment
+# Jarvis voice assistant
 ### Featues in this Jarvis:
 1. Play/Pause/Resume/Stop Music
 2. Search anything in wikipedia
