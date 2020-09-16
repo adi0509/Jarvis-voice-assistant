@@ -50,7 +50,7 @@ def takeCommand():
 	return query
 
 # this class is used for playing song 
-'''music_dir = '/home/ritick/Music'
+music_dir = '/home/Adarsh/Music'
 class testVLC:
     def __init__(self):
         self.list1 = playlist
@@ -74,7 +74,6 @@ playlist = os.listdir(music_dir)
 shuffle(playlist)
 test = testVLC()
 test.addPlaylist()
-'''
 
 if __name__ == "__main__":
     wishme()
