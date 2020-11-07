@@ -50,7 +50,7 @@ def takeCommand():
 	return query
 
 # this class is used for playing song 
-music_dir = '/home/adarsh/Adi/music'
+music_dir = '/home/Adarsh/Music'
 class testVLC:
     def __init__(self):
         self.list1 = playlist
@@ -75,7 +75,6 @@ shuffle(playlist)
 test = testVLC()
 test.addPlaylist()
 
-
 if __name__ == "__main__":
     wishme()
     while True:		
@@ -89,22 +88,22 @@ if __name__ == "__main__":
             print(results)
             speak(results)
         elif 'youtube' in query:
-			if 'open' in query:
-				webbrowser.open("https://youtube.com")
-			else: 
-				query = query.replace("youtube", "")
-				query = query.replace("search", "")
-				query = query.replace(" ", "+")
-				print("search: ", query)
-				webbrowser.open("https://www.youtube.com/results?search_query="+query)
+        	if 'open' in query:
+        		webbrowser.open("https://youtube.com")
+        	else: 
+        		query = query.replace("youtube", "")
+        		query = query.replace("search", "")
+        		query = query.replace(" ", "+")
+        		print("search: ", query)
+        		webbrowser.open("https://www.youtube.com/results?search_query="+query)
         elif 'google' in query:
-			if 'open' in query:
-				webbrowser.open("https://google.com")
-			else:
-				query = query.replace("google", "")
-				query = query.replace("search", "")
-				query = query.replace(" ", "+")
-				webbrowser.open("https://google.com/search?q="+query)
+        	if 'open' in query:
+        		webbrowser.open("https://google.com")
+        	else:
+        		query = query.replace("google", "")
+        		query = query.replace("search", "")
+        		query = query.replace(" ", "+")
+        		webbrowser.open("https://google.com/search?q="+query)
         elif ('quit' in query) or ('bye' in query):
             speak('Ok bye sir')
             break
@@ -120,11 +119,10 @@ if __name__ == "__main__":
             elif 'resume' in query:
                 test.pausePlaylist()
         elif 'time' in query:
-			strTime = datetime.datetime.now().strftime("%H:%M:%S")
-			print(strTime)
-			speak("Sir, the time is "+strTime)
-
+        	strTime = datetime.datetime.now().strftime("%H:%M:%S")
+        	print(strTime)
+        	speak("Sir, the time is "+strTime)
         elif 'open code' in query:
-			os.system("code")
+        	os.system("code")
         elif 'hello' in query:
-                speak("Hello, Sir!")
+        	speak("Hello, Sir!")

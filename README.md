@@ -17,8 +17,11 @@ To run this file you have to install some python module.
 4. `pip install python-vlc`
 5. `pip install gTTS`
 
-Before running `Jarvis.desktop` file, make jarvis.py executable. `chmod +x jarvis.py`. Also change path of icon and jarvis.py file inside Jarvis.desktop.
+Before running `Jarvis.desktop` file, make `jarvis.py` executable. `chmod +x jarvis.py`. Also change path of icon and `jarvis.py` file inside `Jarvis.desktop`.
 
 Install all this and then run this file, add a new feature and enjoy your own assistant.
 
 You can create a `Pull Request` by adding a new feature.
+
+
+Hello from tets branch
